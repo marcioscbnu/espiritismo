@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .classic-paper {
+    background-color: #FCFBF7;
+    background-image: radial-gradient(rgba(15, 37, 55, 0.05) 1px, transparent 0);
+    background-size: 18px 18px;
+  }
+}
+
+@media print {
+  section,
+  footer {
+    break-inside: avoid;
+    page-break-inside: avoid;
+    page-break-after: always;
+  }
+}
